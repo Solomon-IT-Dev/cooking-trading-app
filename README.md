@@ -4,8 +4,8 @@ Frontend project for Explore screen with high-performance SSE updates (`/kitchen
 
 ## Current Focus
 
-- Desktop Explore/Home UI (close to Figma, without pixel-perfect requirement)
-- Authenticated SSE integration with Bearer token
+- Desktop Explore/Home UI
+- Authenticated SSE integration
 - Smooth rendering under heavy update flow
 - Virtualized token columns for large datasets
 
@@ -17,14 +17,6 @@ Create `.env.local`:
 VITE_API_BASE_URL=http://api.dev.cooking.gg
 VITE_STOVE_TOKEN=<JWT>
 ```
-
-## SSE Endpoint Notes
-
-- Endpoint: `GET /kitchen/stove`
-- Requires query param: `chain` (`solana | bsc | base`)
-- Current client configuration uses `chain=solana`
-- Requires header auth: `Authorization: Bearer <JWT>`
-- Uses fetch-based SSE client (`@microsoft/fetch-event-source`), not native `EventSource`
 
 ## Run
 
