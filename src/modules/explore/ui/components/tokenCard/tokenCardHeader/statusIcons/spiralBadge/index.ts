@@ -1,0 +1,1 @@
+export { SpiralBadge } from './SpiralBadge'

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', 'SF Pro Display', 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #f4f4f5;
+}
+
+#root {
+  height: 100vh;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.token-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  scrollbar-gutter: stable;
+}
+
+.token-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.token-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.token-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.token-scrollbar:hover::-webkit-scrollbar-thumb,
+.token-scrollbar:focus-within::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+}
+
+.token-scrollbar:hover,
+.token-scrollbar:focus-within {
+  scrollbar-color: #3f3f46 transparent;
+}
